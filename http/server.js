@@ -4,14 +4,8 @@ const PORT = 8000;
 const server = http.createServer((req, res) => {
   // res.write("hello");
 
-  res.writeHead(200, { "Content-Type": "text/html" });
-  res.end(
-    JSON.stringify({
-      status: "true",
-      message: "success",
-      data: { name: "Ehtsham ul haq" },
-    }),
-  );
+  res.writeHead(200, { "Content-Type": "text/plain" });
+  res.end("hello from server");
 });
 
 server.listen(PORT, () => {
