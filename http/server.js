@@ -4,12 +4,12 @@ const PORT = 8000;
 const server = http.createServer((req, res) => {
   // res.write("hello");
 
-  res.writeHead(200, { "Content-Type": "application/json" });
+  res.writeHead(200, { "Content-Type": "text/html" });
   res.end(
     JSON.stringify({
       status: "true",
       message: "success",
-      data: { name: "ehtsham ul haq" },
+      data: { name: "Ehtsham ul haq" },
     }),
   );
 });
