@@ -4,6 +4,10 @@ const PORT = process.env.PORT;
 const server = http.createServer((req, res) => {
   // res.write("hello");
 
+  // console.log(req);
+  console.log(req.url);
+  console.log(req.method);
+
   res.writeHead(200, { "Content-Type": "text/plain" });
   res.end("hello from server");
 });
