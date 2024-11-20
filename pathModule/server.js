@@ -1,6 +1,17 @@
-import path, { dirname } from "path";
+import path from "path";
 import { fileURLToPath } from "url";
 
+import os from "os";
+console.log(os.userInfo()); //user info os thisuser in system
+// {
+//   uid: 501,
+//   gid: 20,
+//   username: 'ehtsham',
+//   homedir: '/Users/ehtsham',
+//   shell: '/bin/zsh'
+// }
+
+////////////path module
 const filePath = "./user/file.txt";
 
 //basename
@@ -26,5 +37,5 @@ const __dirname = path.dirname(__filename); //Users/ehtsham/Projects/node/node/p
 console.log(__filename, __dirname);
 
 //join
-const filePathJoin = path.join(__dirname, "user", "text.txt");///Users/ehtsham/Projects/node/node/pathModule/user/text.txt 
+const filePathJoin = path.join(__dirname, "user", "text.txt"); ///Users/ehtsham/Projects/node/node/pathModule/user/text.txt
 console.log(filePathJoin);
