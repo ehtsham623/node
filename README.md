@@ -1,1 +1,1 @@
-Node.js learnings
+Node.js learnings course
